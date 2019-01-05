@@ -1,0 +1,25 @@
+int main()
+{
+    float mark;
+    printf("\n Enter the marks(out of 100):");
+    scanf("%f",&mark);
+    if(mark<=100 && mark>=95)
+        printf("\n Grade:O");
+    if(mark<95 && mark>=90)
+        printf("\n Grade=A");
+    if(mark<90 && mark>=85)
+        printf("\n Grade=B");
+    if(mark<85 && mark>=80)
+        printf("\n Grade=C");
+    if(mark<80)
+        printf("\n Grade=D");
+}
+
+
+Output:
+Enter the marks(out of 100):
+94
+
+ Grade=A
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-calculate-grade-without-else.html
