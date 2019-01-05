@@ -1,0 +1,23 @@
+//Program to print square and cube of each value up to N
+
+int main()
+{
+        int i,n;
+        printf("\n enter the number:");
+        scanf("%d",&n);
+        printf("\n num --> square,cube");
+        for(i=1;i<=n;i++)
+            printf("\n %d   -->   %d   , %d",i,i*i,i*i*i);
+}
+
+
+Output:
+enter the number: 4
+
+ num --> square,cube
+ 1   -->   1   , 1
+ 2   -->   4   , 8
+ 3   -->   9   , 27
+ 4   -->   16   , 64
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-print-square-and-cube-of-value.html
