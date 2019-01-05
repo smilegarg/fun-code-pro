@@ -19,3 +19,7 @@ Enter the price of laptop,mobile and books:40000
 
 Total price:64000.000000
 Average price:21333.333984
+
+
+Reference:
+https://funcodepro.blogspot.com/2018/12/how-to-write-program-for-volume-of.html
