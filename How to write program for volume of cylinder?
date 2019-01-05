@@ -1,0 +1,14 @@
+int main()
+{
+    float v,r,h;
+    printf("\n enter the radius and height of cylinder:");
+    scanf("\n%f%f",&r,&h);
+    v=3.14*r*r*h;
+    printf("\n volume=%f",v);
+}
+
+Output:
+Enter the radius and height of cylinder:
+3
+6
+Volume=169.559998
