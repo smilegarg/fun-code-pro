@@ -1,0 +1,19 @@
+int main()
+{
+    int i,j;
+    for(i=4;i>=1;i--)
+    {
+        for(j=1;j<=i;j++)
+            printf(" * ");
+        printf("\n");
+    }
+}
+
+
+Output:
+ *  *  *  *
+ *  *  *
+ *  *
+ *
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-print-star-pattern-in-reverse.html
