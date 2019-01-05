@@ -1,0 +1,40 @@
+/*Input messages sent and calls. Get Mobile Bill as shown :
+-> if msg<=50 then rs. 0.10 per msg else rs. 0.25
+-> if calls<=200 then rs. 0.75 else 0.95
+-> add Rs. 100 as rent
+-> Calculate tax 12.5% if bill<=1000 else 22.5% and get gross bill.
+*/
+
+
+int main()
+{
+    float msg,call,tax,bill,gross,p,m,c;
+    printf("\n enter the number of messages sent and calls:");
+    scanf("%f%f",&msg,&call);
+    if(msg<=50)
+        m=.10*msg;
+    else
+        m=.25*msg;
+    if(call<=200)
+        c=.75*call;
+    else
+        c=.95*call;
+    p=m+c;
+    bill=p+100;
+    if(bill<=1000)
+        tax=bill*12.5/100;
+    else
+        tax=bill*22.5/100;
+    gross=bill+tax;
+    printf("\n Gross Bill= Rs. %f",gross);
+}
+
+
+Output:
+enter the number of messages sent and calls:
+88
+400
+
+ Gross Bill= Rs. 564.750000
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-calculate-mobile-bill.html
