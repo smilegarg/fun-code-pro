@@ -1,0 +1,23 @@
+//Program to check profit, loss or nothing, and what is the amount
+int main()
+{
+    int sp,pp,a;
+    printf("\n enter the purchase price and selling price:");
+    scanf("%d%d",&pp,&sp);
+    a=sp-pp;
+    if (a<0)
+        printf("\n loss=%d",a*(-1));
+    else if(a>0)
+        printf("\n profit=%d",a);
+    else
+        printf("\n neither profit nor loss");
+}
+
+Output:
+enter the purchase price and selling price:
+45
+87
+
+ profit=42
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-know-whether-it-is-profit-or.html
