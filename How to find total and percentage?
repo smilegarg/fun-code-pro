@@ -1,0 +1,20 @@
+//Input the marks of physics,chem and math and find the total and percentage
+
+int main()
+{
+    float t,p,c,m,per;
+    printf("\n Enter the marks of physics,chemitry and maths:");
+    scanf("%f%f%f",&p,&c,&m);
+    t=p+c+m;
+    per=t*100/300;
+    printf("\n total marks:%f",t);
+    printf("\n percentage:%f",per);
+}
+
+Output:-
+Enter the marks of physics,chemitry and maths:
+89
+90
+99
+ total marks:278.000000
+ percentage:92.666664
