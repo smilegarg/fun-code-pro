@@ -1,0 +1,23 @@
+int main()
+{
+    float num,a;
+    int integer;
+    printf("\n enter a number with 2 decimal digit:");
+    scanf("\n%f",&num);
+    integer=num;
+    a= num-integer;
+    printf("\n number=%f",num);
+    printf("\n integer part=%i",integer);
+    printf("\n decimal part=%f",a);
+}
+
+
+Output:
+ enter a number with 2 decimal digit:
+234.76543
+
+ number=234.765427
+ integer part=234
+ decimal part=0.765427
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-separate-integer-and-decimal-part.html
