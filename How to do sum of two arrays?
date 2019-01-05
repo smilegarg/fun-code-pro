@@ -1,0 +1,42 @@
+int main()
+{
+    int a[10],b[10],c[10],i,n;
+    printf("\n enter the number of elements(less than 10):");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\n enter a[%d]:",i);
+        scanf("%d",&a[i]);
+    }
+    printf("\n\n");
+    for(i=0;i<n;i++)
+    {
+        printf("\n enter b[%d]:",i);
+        scanf("%d",&b[i]);
+    }
+    printf("\n\n sum of two array is:");
+    for(i=0;i<n;i++)
+    {
+        c[i]=a[i]+b[i];
+        printf("\n c[%d]:%d",i,c[i]);
+    }
+}
+
+
+Output:
+enter the number of elements(less than 10): 3
+
+ enter a[0]:23
+ enter a[1]:56
+ enter a[2]:34
+
+ enter b[0]:76
+ enter b[1]:33
+ enter b[2]:89
+
+ sum of two array is:
+ c[0]:99
+ c[1]:89
+ c[2]:123
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-do-sum-of-two-arrays.html
