@@ -1,0 +1,23 @@
+Interchange the value of c and d
+
+int main()
+{
+    float c,d;
+    printf("\n Enter c and d:");
+    scanf("%f%f",&c,&d);
+    c=c+d;
+    d=c-d;
+    c=c-d;
+    printf(“After swapping:\n”);
+    printf("\n c=%f and d=%f",c,d);
+}
+
+
+Output:
+Enter c and d:
+4
+6
+After swapping:
+ c=6 and d=4
+
+Reference:https://funcodepro.blogspot.com/2018/12/swapping.html
