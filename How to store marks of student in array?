@@ -1,0 +1,34 @@
+//Program to input marks of n students and count nno. Of students got >=80 marks and also count no. of students got marks between 60 and 70.
+
+int main()
+{
+    int a[10],c=0,c1=0,i,n;
+    printf("\n enter number of students(less than 10):");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\n Enter marks:");
+        scanf("%d",&a[i]);
+        if(a[i]>=80)
+            c++;
+        else if (a[i]>=60 && a[i]<=70)
+            c1++;
+    }
+    printf("\n Students got >=80 is %d",c);
+    printf("\n students got between 60 and 70 is %d",c1);
+}
+
+
+Output:
+enter number of students(less than 10): 5
+
+ Enter marks:78
+ Enter marks:89
+ Enter marks:97
+ Enter marks:34
+ Enter marks:55
+
+ Students got >=80 is 2
+ students got between 60 and 70 is 0
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-store-marks-of-student-in-array.html
