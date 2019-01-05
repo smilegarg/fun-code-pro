@@ -1,0 +1,29 @@
+int main()
+{
+    int i;
+    float n,total=0,avg,a[10];
+    printf("\n enter the number of products(less than 10):");
+    scanf("%f",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\n enter the price of %d product:",i+1);
+        scanf("%f",&a[i]);
+        total+=a[i];
+    }
+    avg=total/n;
+    printf("\n Total price=%f \n Average price=%f",total,avg);
+}
+
+
+Output:
+enter the number of products(less than 10): 4
+
+ enter the price of 1 product:234
+ enter the price of 2 product:543
+ enter the price of 3 product:754
+ enter the price of 4 product:234
+
+ Total price=1765.000000
+ Average price=441.250000
+
+Reference:https://funcodepro.blogspot.com/2018/12/write-program-to-input-price-of-n.html
