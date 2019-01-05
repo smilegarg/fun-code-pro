@@ -1,0 +1,27 @@
+int main()
+{
+    int i=1,n;
+    printf("\n enter n:");
+    scanf("%d",&n);
+    do
+    {
+        printf("\n %d * %d = %d",n,i,n*i);
+        i++;
+    }while(i<=10);
+}
+
+Output:
+enter n: 4
+
+ 4 * 1 = 4
+ 4 * 2 = 8
+ 4 * 3 = 12
+ 4 * 4 = 16
+ 4 * 5 = 20
+ 4 * 6 = 24
+ 4 * 7 = 28
+ 4 * 8 = 32
+ 4 * 9 = 36
+ 4 * 10 = 40
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-create-table-of-n-using-do-while.html
