@@ -1,0 +1,23 @@
+//Write a program to find volume of cylinder using pointer..
+
+int main()
+{
+    float r,h,v,*pr,*ph,*pv;
+    printf("\n enter radius and height :");
+    scanf("%f%f",&r,&h);
+    pr=&r;
+    ph=&h;
+    pv=&v;
+    *(pv)=3.14*(*pr)*(*pr)*(*ph);
+    printf("\n volume of cylinder=%f",v);
+}
+
+Output:
+
+enter radius and height :
+4
+7
+
+ volume of cylinder=351.679993
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-volume-of-cylinder.html
