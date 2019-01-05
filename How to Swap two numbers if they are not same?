@@ -1,0 +1,35 @@
+int main()
+{
+    int a,b;
+    printf("\n enter the value of a and b:");
+    scanf("%d%d",&a,&b);
+    if(a!=b)
+    {
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        printf("\n after swaping:\n a=%d,b=%d",a,b);
+    }
+    else
+    {
+        printf("\n numbers are same");
+    }
+}
+
+
+Output:
+enter the value of a and b:
+2
+4
+
+ after swaping:
+ a=4,b=2
+
+AND
+enter the value of a and b:
+2
+2
+
+ numbers are same
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-swap-two-numbers-if-they-are-not.html
