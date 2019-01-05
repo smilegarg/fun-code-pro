@@ -1,0 +1,27 @@
+//If a five digit number is input through the keyboard,write a program to calculate the sum of its digits
+
+int main()
+{
+    int num,sum,r1,r2,r3,r4;
+    printf("\n enter a 5 digit number:");
+    scanf("\n %d",&num);                                                 
+    r1=num%10;
+    num=num/10;
+    r2=num%10;
+    num=num/10;
+    r3=num%10;
+    num=num/10;
+    r4=num%10;
+    num=num/10;
+    sum=r1+r2+r3+r4+num;
+    printf("\n sum of digits:%d",sum);
+}
+
+
+Output:
+enter a 5 digit number:
+12345
+
+ sum of digits:15
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-calculate-sum-of-digits.html
