@@ -1,0 +1,31 @@
+int main()
+{
+    int n,total=0,pr,avr,i;
+    printf("\n enter the number of product:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        printf("\n enter the price of %d product:",i);
+        scanf("%d",&pr);
+        total+=pr;
+    }
+    avr=total/n;
+    printf("\n Total price=%d",total);
+    printf("\n Average=%d",avr);
+}
+
+
+Output:
+enter the number of product: 3
+
+ enter the price of 1 product:5789
+
+ enter the price of 2 product:96579
+
+ enter the price of 3 product:5567
+
+ Total price=107935
+
+ Average=35978
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-total-and-average-price.html
