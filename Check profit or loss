@@ -1,0 +1,32 @@
+/*Input purchase price (pp) and sale price(sp) and find out profit or loss with amount
+//pr=sp-pp
+//lo=pp-sp
+*/
+
+int main()
+{
+    float pr,lo,sp,pp;
+    printf("\n enter the purchase price and selling price:");
+    scanf("%f%f",&pp,&sp);
+    if(sp>pp)
+    {
+        pr=sp-pp;
+        printf("\n profit=%f",pr);
+    }
+    else
+    {
+        lo=pp-sp;
+        printf("\n loss=%f",lo);
+    }
+}
+
+
+Output:
+enter the purchase price and selling price:
+34
+65
+
+ profit=31.000000
+
+
+Reference:https://funcodepro.blogspot.com/2018/12/check-profit-or-loss.html
