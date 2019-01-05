@@ -1,0 +1,18 @@
+int main()
+{
+    int mr;
+    char gr;
+    printf("\n enter the marks(out of 100):");
+    scanf("%d",&mr);
+    gr=((mr<=100&&mr>=95)?'O':(mr<95&&mr>=90)?'A':(mr<90&&mr>=85)?'B':(mr<85&&mr>=80)?'C':'D');
+    printf("\n grade=%c",gr);
+}
+
+
+Output:
+ enter the marks(out of 100):
+98
+
+ grade=O
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-calculate-grade-of-student-using.html
