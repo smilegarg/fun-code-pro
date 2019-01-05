@@ -1,0 +1,22 @@
+//sa=s*s;
+//ca=3.14*r*r;
+
+int main()
+{
+    float sa,s,ca,r;
+    printf("\n Enter the side of square and radius of circle:");
+    scanf("%f%f",&s,&r);
+    sa=s*s;
+    ca=3.14*r*r;
+    printf("\n Area of square:%f",sa);
+    printf("\n Area of circle:%f",ca);
+}
+
+Output:
+Enter the side of square and radius of circle:
+4
+5
+ Area of square:16.000000
+ Area of circle:78.500000
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-write-program-for-area-of-square.html
