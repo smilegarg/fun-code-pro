@@ -1,0 +1,19 @@
+//Input time in minutes and covert it in to valid hours and minutes
+
+int main()
+{
+    int min,h,minute;
+    printf("\n Enter the minutes:");
+    scanf("\n %i",&min);
+    h=min/60;
+    minute=min%60;
+    printf("\n Hours=%d and Minutes=%i",h,minute);
+}
+
+
+Output:
+Enter the minutes:
+70
+ Hours=1 and Minutes=10
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-convert-minutes-into-hours-and.html
