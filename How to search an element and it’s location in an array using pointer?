@@ -1,0 +1,44 @@
+//Write a program to search an element and it’s location in an array using pointer..
+
+int main()
+{
+    int *p,a[10],n,i,count=0,num;
+    printf("\n enter N:");
+    scanf("%d",&n);
+    p=a;
+    for(i=0;i<n;i++)
+    {
+        printf("\n value at a[%d]:",i);
+        scanf("%d",(p+i));
+    }
+    printf("\n enter the number to search:");
+    scanf("%d",&num);
+    for(i=0;i<n;i++)
+    {
+        if(num==*(p+i))
+        {
+            count++;
+            printf("\n value found at a[%d]",i);
+            break;
+        }
+    }
+    if(count==0)
+        printf("\n element not found");
+}
+
+
+Output:
+
+enter N:6
+ value at a[0]:4
+ value at a[1]:7
+ value at a[2]:2
+ value at a[3]:9
+ value at a[4]:5
+ value at a[5]:1
+
+ enter the number to search:2
+ value found at a[2]
+
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-search-element-and-its-location.html
