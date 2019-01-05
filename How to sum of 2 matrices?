@@ -1,0 +1,51 @@
+// Write a program to add two matrices ‘a’ and ‘b’ and save it in another matrix ‘c’
+
+int main()
+{
+    int n,i,j,a[10][10],b[10][10],c[10][10];
+    printf("\n enter N:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            printf("\n enter value at a[%d][%d]:",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            printf("\n enter value at b[%d][%d]:",i,j);
+            scanf("%d",&b[i][j]);
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            c[i][j]=a[i][j]+b[i][j];
+            printf("%d ",c[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+Output:
+enter N:2
+
+ enter value at a[0][0]:1
+ enter value at a[0][1]:2
+ enter value at a[1][0]:3
+ enter value at a[1][1]:4
+
+ enter value at b[0][0]:1
+ enter value at b[0][1]:2
+ enter value at b[1][0]:3
+ enter value at b[1][1]:4
+
+2 4
+6 8
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-sum-of-2-matrices.html
