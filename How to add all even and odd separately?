@@ -1,0 +1,26 @@
+//Program to add all even and odd values separately from 1 to N.
+
+int main()
+{
+    int n,e=0,o=0,i;
+    printf("\n enter the number:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        if(i%2==0)
+            e+=i;
+        else
+            o+=i;
+    }
+    printf("\n sum of evens=%d",e);
+    printf("\n sum of odd=%d",o);
+}
+
+
+Output:
+enter the number:5
+
+ sum of evens=6
+ sum of odd=9
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-add-all-even-and-odd-separately.html
