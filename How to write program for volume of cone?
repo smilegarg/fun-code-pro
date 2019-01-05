@@ -1,0 +1,18 @@
+//v=3.14*r*r*h/3
+
+int main()
+{
+    float v,r,h;
+    printf("\n enter the radius and height:");
+    scanf("%f%f",&r,&h);
+    v=3.14*r*r*h/3;
+    printf("\n volume=%f",v);
+}
+
+Output:
+Enter the radius and height:
+3
+6
+ Volume=56.520000
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-write-program-for-volume-of-cone.html
