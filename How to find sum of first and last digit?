@@ -1,0 +1,22 @@
+//If a six digit number is input through the keyboard, write a program to obtain the sum of the first and last digit of this number
+
+int main()
+{
+    int num,sum,r1,r2;
+    printf("\n enter the 6 digit number:");
+    scanf("\n %i",&num);
+    r1=num%10;
+    r2=num/100000;
+    sum=r1+r2;
+    printf("\n sum of first and last digit of %d is %d",num,sum);
+}
+
+
+Output:
+enter the 6 digit number:
+123456
+
+ sum of first and last digit of 123456 is 7
+
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-sum-of-first-and-last-digit.html
