@@ -1,0 +1,39 @@
+//Input Radius, if it is <10 then calculate area of circle else calculate volume of cylinder
+
+int main()
+{
+    float r,h,a,v;
+    printf("\n enter radius less than 10 for area of circle and greater than 10 for volume of cylinder:");
+    printf("\n enter radius:");
+    scanf("%f",&r);
+    if(r<10)
+    {
+        a=3.14*r*r;
+        printf("\n area of circle:%f",a);
+    }
+    else
+    {
+        printf("\n enter height of cylinder:");
+        scanf("%f",&h);
+        v=3.14*r*r*h;
+        printf("\n volume of cylinder:%f",v);
+    }
+}
+
+Output:
+enter radius less than 10 for area of circle and greater than 10 for volume of cylinder:
+ enter radius:
+5
+
+ area of circle:78.500000
+
+AND
+enter radius less than 10 for area of circle and greater than 10 for volume of cylinder:
+ enter radius:
+11
+
+ enter height of cylinder:5
+
+ volume of cylinder:1899.699951
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-calculate-area-of-circle-and.html
