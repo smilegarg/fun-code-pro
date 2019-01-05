@@ -1,0 +1,19 @@
+1 4
+ 2 3
+ 3 2
+ 4 1
+
+int main()
+{
+    int i,j;
+    for(i=1,j=4;i<=4,j>=1;i++,j--)
+        printf("\n %d %d",i,j);
+}
+
+Output:
+ 1 4
+ 2 3
+ 3 2
+ 4 1
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-get-following-output.html
