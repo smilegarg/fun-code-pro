@@ -1,0 +1,35 @@
+//Write a program to find volume of cylinder using friend function…
+
+#include<iostream>
+using namespace std;
+class data
+{
+    float r,h;
+public:
+    void input()
+    {
+        cout<<"\n enter r and h:";
+        cin>>r>>h;
+    }
+    friend void volume(data obj);
+};
+void volume(data obj)
+{
+    float v=obj.r*obj.h*3.14*obj.r;
+    cout<<"\n volume="<<v;
+}
+int main()
+{
+    data obj;
+    obj.input();
+    volume(obj);
+}
+
+
+Output:
+enter r and h:2
+6
+
+ volume=75.36
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-find-volume-of-cylinder-using.html
