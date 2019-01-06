@@ -1,0 +1,111 @@
+//Method -1
+
+#include<iostream>
+using namespace std;
+class hgt
+{
+    float f,i;
+    public:
+    void setValue(float f1,float i1)
+    {
+        f=f1;
+        i=i1;
+    }
+    hgt pro(hgt h2)
+    {
+        hgt h3;
+        h3.f=f-h2.f;
+        h3.i=i-h2.i;
+        if(h3.f<0)
+            h3.f*=(-1);
+        if(h3.i<0)
+            h3.i*=(-1);
+        return h3;
+    }
+    void show()
+    {
+        cout<<f<<" "<<i;
+    }
+};
+int main()
+{
+    float f1,f2,i1,i2;
+    hgt h1,h2,h3;
+    cout<<"enter first height:";
+    cin>>f1>>i1;
+    h1.setValue(f1,i1);
+    cout<<"enter second height:";
+    cin>>f2>>i2;
+    h2.setValue(f2,i2);
+    h3=h1.pro(h2);
+    cout<<"\n difference of height:";
+    h3.show();
+}
+
+
+Output:
+enter first height:12
+45
+enter second height:63
+59
+
+ difference of height: 51  14
+
+
+//Method -2
+
+#include<iostream>
+using namespace std;
+class hgt
+{
+    float f,i;
+    public:
+    void setValue(float f1,float i1)
+    {
+        f=f1;
+        i=i1;
+    }
+    hgt pro(hgt h2)
+    {
+        hgt h3;
+        h3.f=f-h2.f;
+        h3.i=i-h2.i;
+        if(h3.f<0)
+            h3.f*=(-1);
+        if(h3.i<0)
+            h3.i*=(-1);
+        return h3;
+    }
+    float show1()
+    {
+        return f;
+    }
+    float show2()
+    {
+        return i;
+    }
+};
+int main()
+{
+    float f1,f2,i1,i2;
+    hgt h1,h2,h3;
+    cout<<"enter first height:";
+    cin>>f1>>i1;
+    h1.setValue(f1,i1);
+    cout<<"enter second height:";
+    cin>>f2>>i2;
+    h2.setValue(f2,i2);
+    h3=h1.pro(h2);
+    cout<<"\n difference of height:"<<h3.show1()<<" "<<h3.show2();
+}
+
+
+Output:
+enter first height:56
+12
+enter second height:79
+3
+
+ difference of height:23 9
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-write-program-to-find-difference.html
