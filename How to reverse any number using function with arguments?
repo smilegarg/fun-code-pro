@@ -1,0 +1,29 @@
+//Write a program to find reverse of a number using function with arguments…
+
+int main()
+{
+    int n;
+    printf("\n enter N:");
+    scanf("%d",&n);
+    void reverse(int n);
+    reverse(n);
+}
+void reverse(n)
+{
+    int r,rev=0;
+    while(n!=0)
+    {
+        r=n%10;
+        rev=rev*10+r;
+        n=n/10;
+    }
+    printf("\n reverse of the number=%d",rev);
+}
+
+
+Output:
+enter N:456
+
+ reverse of the number=654
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-reverse-any-number-using.html
