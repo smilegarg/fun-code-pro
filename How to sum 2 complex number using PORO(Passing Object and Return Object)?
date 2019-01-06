@@ -1,0 +1,50 @@
+//Write a program to sum of 2 complex number…
+
+#include<iostream>
+using namespace std;
+class comp
+{
+    float r,i;
+    public:
+    void setValue(float r1,float i1)
+    {
+        r=r1;
+        i=i1;
+    }
+    comp pro(comp c2)
+    {
+        comp c3;
+        c3.r=r+c2.r;
+        c3.i=i+c2.i;
+        return c3;
+    }
+    void show()
+    {
+        cout<<r<<" + i "<<i;
+    }
+};
+int main()
+{
+    float r1,r2,i1,i2;
+    comp c1,c2,c3;
+    cout<<"enter first complex number:";
+    cin>>r1>>i1;
+    c1.setValue(r1,i1);
+    cout<<"enter second complex number:";
+    cin>>r2>>i2;
+    c2.setValue(r2,i2);
+    c3=c1.pro(c2);
+    cout<<"\n sum of complex numbers:";
+    c3.show();
+}
+
+
+Output:
+enter first complex number:45
+4
+enter second complex number:12
+7
+
+ sum of complex numbers:57 + i 11
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-sum-2-complex-number-using.html
