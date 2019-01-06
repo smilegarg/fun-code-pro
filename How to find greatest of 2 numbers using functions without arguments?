@@ -1,0 +1,28 @@
+//Write a program to find greatest of 2 numbers using functions without arguments..
+
+int main()
+{
+    void gr();
+    gr();
+}
+void gr()
+{
+    int a,b;
+    printf("\n enter 2 numbers:");
+    scanf("%d%d",&a,&b);
+    if(a>b)
+        printf("\n first number is greater");
+    else if(b>a)
+        printf("\n second number is greater");
+    else
+        printf("\n both are same");
+}
+
+Output:
+enter 2 numbers:
+87
+54
+
+ first number is greater.
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-greatest-of-2-numbers-using.html
