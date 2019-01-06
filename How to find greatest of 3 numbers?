@@ -1,0 +1,50 @@
+//Write a program to find greatest of 3 numbers…..
+
+#include<iostream>
+using namespace std;
+class gr
+{
+    int a,b,c,max;
+    public:
+    void input()
+    {
+        cout<<"\n enter a,b,c:";
+        cin>>a>>b>>c;
+    }
+    void pro()
+    {
+        if(a>b)
+        {
+            if(a>c)
+                max=a;
+            else
+                max=c;
+        }
+        else
+            if(b>c)
+                max=b;
+            else
+                max=c;
+    }
+    void out()
+    {
+        cout<<"\n greatest number="<<max;
+    }
+};
+int main()
+{
+    gr obj;
+    obj.input();
+    obj.pro();
+    obj.out();
+}
+
+
+Output:
+enter a,b,c:45
+78
+26
+
+ greatest number=78
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-find-greatest-of-3-numbers.html
