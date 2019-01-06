@@ -1,0 +1,32 @@
+//Write a program to find palindrome using functions without arguments..
+
+int main()
+{
+    void pal();
+    pal();
+}
+void pal()
+{
+    int n,r,rev=0,m;
+    printf("\n enter N:");
+    scanf("%d",&n);
+    m=n;
+    while(m!=0)
+    {
+        r=m%10;
+        rev=rev*10+r;
+        m=m/10;
+    }
+    if (rev==n)
+        printf("\n Number is palindrome");
+    else
+        printf("\n Number is not palindrome");
+}
+
+
+Output:
+enter N:4564
+
+ Number is not palindrome
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-palindrome-using-functions.html
