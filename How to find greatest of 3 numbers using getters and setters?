@@ -1,0 +1,56 @@
+//Write a program to find greatest of 3 numbers using getters and setters…
+
+#include<iostream>
+using namespace std;
+class gr
+{
+    int a,b,c,max;
+    public:
+    void setValue(int a1,int b1,int c1)
+    {
+        a=a1;
+        b=b1;
+        c=c1;
+    }
+    void pro()
+    {
+        if(a>b)
+        {
+            if(a>c)
+                max=a;
+            else
+                max=c;
+        }
+        else
+            if(b>c)
+                max=b;
+            else
+                max=c;
+    }
+    int getValue()
+    {
+        return max;
+    }
+};
+int main()
+{
+    gr obj;
+    int a1,b1,c1,max;
+    cout<<"\n enter 3 numbers:\n";
+    cin>>a1>>b1>>c1;
+    obj.setValue(a1,b1,c1);
+    obj.pro();
+    max=obj.getValue();
+    cout<<"\n maximum value="<<max;
+}
+
+
+Output:
+enter 3 numbers:
+24
+78
+59
+
+ maximum value=78
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-find-greatest-of-3-numbers-using.html
