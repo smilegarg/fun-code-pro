@@ -1,0 +1,94 @@
+//Write a program to enter roll no. and marks of students and find total percentage and also find maximum total and minimum percentage….
+
+#include<iostream>
+using namespace std;
+class stud
+{
+    int roll;
+    float p,c,m,tot,per;
+    public:
+    void setValue()
+    {
+        cout<<"\n enter roll no.\n";
+        cin>>roll;
+        cout<<"\n enter marks of physics,chemistry and maths(out of 100 each):\n";
+        cin>>p>>c>>m;
+    }
+    float pro()
+    {
+        tot=p+c+m;
+        per=tot*100/300;
+    }
+    float getPer()
+    {
+        return per;
+    }
+    float getTot()
+    {
+        return tot;
+    }
+};
+int main()
+{
+    int n,i;
+    float max,min;
+    cout<<"\n enter number of students:";
+    cin>>n;
+    stud s[n];
+    for(i=0;i<n;i++)
+    {
+        s[i].setValue();
+        s[i].pro();
+    }
+    for(i=0;i<n;i++)
+    {
+        float tot=s[i].getTot();
+        float per=s[i].getPer();
+        cout<<"\n"<<i+1<<". total="<<tot<<" ,Percentage="<<per;
+    }
+    max=s[0].getTot();
+    min=s[0].getPer();
+    for(i=0;i<n;i++)
+    {
+        if(max<s[i].getTot())
+            max=s[i].getTot();
+        if(min>s[i].getPer())
+            min=s[i].getPer();
+    }
+    cout<<"\n maximum total="<<max;
+    cout<<"\n minimum percentage="<<min;
+}
+
+
+Output:
+enter number of students:3
+
+ enter roll no.
+1
+ enter marks of physics,chemistry and maths(out of 100 each):
+86
+96
+90
+
+ enter roll no.
+2
+ enter marks of physics,chemistry and maths(out of 100 each):
+78
+89
+95
+
+ enter roll no.
+3
+ enter marks of physics,chemistry and maths(out of 100 each):
+99
+100
+100
+
+1. total=272 ,Percentage=90.6667
+2. total=262 ,Percentage=87.3333
+3. total=299 ,Percentage=99.6667
+
+ maximum total=299
+ minimum percentage=87.3333
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-make-program-to-enter-details-of.html
