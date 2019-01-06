@@ -1,0 +1,60 @@
+//Write a program to enter heights of 2 persons and display the output using relational operator overloading…
+
+#include<iostream>
+using namespace std;
+class height
+{
+    int f,i;
+public:
+    void input()
+    {
+        cout<<"\n feet and inches:";
+        cin>>f>>i;
+    }
+    int operator == (height r)
+    {
+        if(f==r.f && i==r.i)
+            return(1);
+        else
+            return 0;
+    }
+    int operator < (height r)
+    {
+        if((f*12+i)<(r.f*12+r.i))
+            return 1;
+        else
+            return 0;
+    }
+};
+int main()
+{
+    height h1,h2;
+    cout<<"\n enter the height of h1:";
+    h1.input();
+    cout<<"\n enter the height of h2:";
+    h2.input();
+    if(h1==h2)
+        cout<<"same";
+    else
+        cout<<"\n not same";
+    if(h1<h2)
+        cout<<"\n h1 is shorter than h2";
+    else
+        cout<<"\n h1 is not shorter than h2";
+}
+
+
+
+Output:
+enter the height of h1:
+ feet and inches:32
+68
+
+ enter the height of h2:
+ feet and inches:12
+53
+
+ not same
+ h1 is not shorter than h2
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-use-relational-operator_3.html
