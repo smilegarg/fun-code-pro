@@ -1,0 +1,39 @@
+//Write a program to find the difference between time of 2 clocks using structure…
+
+struct diff
+{
+    int hour,min,sec;
+};
+int main()
+{
+    struct diff c1,c2,*p1,*p2;
+    p1=&c1;
+    p2=&c2;
+    void sub(struct diff *p1,struct diff *p2);
+    sub(&c1,&c2);
+}
+void sub(struct diff *p1,struct diff *p2)
+{
+    struct diff difference;
+    printf("\n enter time at first clock(hour:minute:second):");
+    scanf("%d%d%d",&p1->hour,&p1->min,&p1->sec);
+    printf("\n enter time at second clock(hour:minute:second):");
+    scanf("%d%d%d",&p2->hour,&p2->min,&p2->sec);
+    difference.hour=abs( p1->hour - p2->hour);
+    difference.min=abs(p1->min-p2->min);
+    difference.sec=abs(p1->sec-p2->sec);
+    printf("\n difference= %d hours %d min %d sec",difference.hour,difference.min,difference.sec);
+}
+
+Output:
+enter time at first clock(hour:minute:second):48
+23
+79
+
+ enter time at second clock(hour:minute:second):15
+76
+62
+
+ difference= 33 hours 53 min 17 sec
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-difference-between-time-of_31.html
