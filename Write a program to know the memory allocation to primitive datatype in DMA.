@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int *i=new int();
+    *i=7;
+    cout<<"*i="<<*i<<endl;
+    cout<<"\n address:"<<i<<endl;
+    delete i;                                  
+    datatype
+    cout<<"\n*i="<<*i;
+    cout<<"\n\n i="<<i;
+    float *f;
+    f=new float(7.8);
+    cout<<"\n\n f="<<f;
+    cout<<"\n\n *f="<<*f;
+    delete f;
+    char *c=new char('a');
+    cout<<"\n\n *c="<<*c;
+    cout<<"\n\n c="<<(int)c;
+}
+
+
+Output:
+*i=7
+
+ address:0x1f12a0
+
+*i=7
+
+ i=0x1f12a0
+
+ f=0x1f12e0
+
+ *f=7.8
+
+ *c=a
+
+ c=2036512
+
+Reference:https://funcodepro.blogspot.com/2019/01/write-program-to-know-memory-allocation.html
