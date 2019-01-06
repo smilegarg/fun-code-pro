@@ -1,0 +1,43 @@
+//Write a program to find factorial of N using getters and setters…
+
+#include<iostream>
+using namespace std;
+class fact
+{
+    int n,i,f=1;
+public:
+    void setValue(int n1)
+    {
+        n=n1;
+    }
+    void pro()
+    {
+        for(i=1;i<=n;i++)
+        {
+            f=f*i;
+        }
+    }
+    int getValue()
+    {
+        return f;
+    }
+};
+int main()
+{
+    fact obj;
+    int n1,f;
+    cout<<"enter N:";
+    cin>>n1;
+    obj.setValue(n1);
+    obj.pro();
+    f=obj.getValue();
+    cout<<"\n factorial:"<<f;
+}
+
+
+Output:
+enter N:7
+
+ factorial:5040
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-find-factorial-of-n-using.html
