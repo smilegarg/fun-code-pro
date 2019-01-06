@@ -1,0 +1,37 @@
+//Write a program to find greatest of 3 numbers using function using return…..
+
+int main()
+{
+    int a,b,c,max;
+    printf("\n enter a,b,c:");
+    scanf("%d%d%d",&a,&b,&c);
+    int gr(int a,int b,int c);
+    max=gr(a,b,c);
+    printf("\n greatest value=%d",max);
+}
+int gr(a,b,c)
+{
+    if(a>b)
+    {
+        if(a>c)
+            return a;
+        else
+            return c;
+    }
+    else
+        if(b>c)
+            return b;
+        else
+            return c;
+}
+
+
+Output:
+enter a,b,c:
+45
+78
+12
+
+ greatest value=78
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-greatest-of-3-numbers-using.html
