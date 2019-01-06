@@ -1,0 +1,117 @@
+//Method-1
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+class height
+{
+    int f,i,h;
+public:
+    void input()
+    {
+        cout<<"\n feet:";
+        cin>>f;
+        cout<<"\n inches:";
+        cin>>i;
+        h=f*12+i;
+    }
+    height operator - (height a)
+    {
+        height b;
+        b.h=abs(h-a.h);
+        return (b);
+    }
+    void show()
+    {
+        f=h/12;
+        i=h%12;
+        cout<<"\n difference="<<f<<"feet and "<<i<<"inches";
+    }
+};
+int main()
+{
+    height h1,h2,h3;
+    cout<<"\n enter height of first person:";
+    h1.input();
+    cout<<"\n enter height of second person:";
+    h2.input();
+    h3=h1-h2;
+    h3.show();
+}
+
+
+Output:
+enter height of first person:
+ feet:45
+
+ inches:74
+
+ enter height of second person:
+ feet:25
+
+ inches:96
+
+ difference=18feet and 2inches
+
+
+
+//Method -2
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+class height
+{
+    int f,i,h;
+public:
+    void setval(int f1,int i1)
+    {
+        f=f1;
+        i=i1;
+        h=f*12+i;
+    }
+    void show()
+    {
+        cout<<"difference:";
+        cout<<f<<" "<<i;
+    }
+    height operator -(height a)
+    {
+        height b;
+        b.h=abs(h-a.h);
+        b.f=b.h/12;
+        b.i=b.h%12;
+        return(b);
+    }
+};
+int main()
+{
+    height h1,h2,h3;
+    int f2,i2,f3,i3;
+    cout<<"\n enter the height of first person:\nfeet:";
+    cin>>f2;
+    cout<<"\n inches:";
+    cin>>i2;
+    cout<<"\n enter the height of second person:\nfeet:";
+    cin>>f3;
+    cout<<"\n inches:";
+    cin>>i3;
+    h1.setval(f2,i2);
+    h2.setval(f3,i3);
+    h3=h1-h2;
+    h3.show();
+}
+
+Output:
+enter the height of first person:
+feet:21
+
+ inches:63
+
+ enter the height of second person:
+feet:87
+
+ inches:25
+difference:62 10
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-make-program-to-find-difference.html
