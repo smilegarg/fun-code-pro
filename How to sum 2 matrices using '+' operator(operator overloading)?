@@ -1,0 +1,102 @@
+//Write a program to sum of 2 matrices using operator overloading…
+
+#include<iostream>
+using namespace std;
+class sum
+{
+    int a[10][10],i,j,m,n;
+public:
+    void input(int x,int y)
+    {
+        m=x;
+        n=y;
+        cout<<"\n enter values:\n";
+        for(i=0;i<m;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                cin>>a[i][j];
+            }
+        }
+    }
+    void operator +(sum b)
+    {
+        int c[10][10];
+        for(i=0;i<m;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                c[i][j]=a[i][j]+b.a[i][j];
+            }
+        }
+        for(i=0;i<m;i++)
+        {
+            cout<<"\n";
+            for(j=0;j<n;j++)
+            {
+                cout<<"  "<<c[i][j];
+            }
+        }
+    }
+    void show()
+    {
+        for(i=0;i<m;i++)
+        {
+            cout<<"\n";
+            for(j=0;j<n;j++)
+            {
+                cout<<"  "<<a[i][j];
+            }
+        }
+    }
+};
+int main()
+{
+    sum num1,num2;
+    int x,y;
+    cout<<"\n enter M and N:";
+    cin>>x>>y;
+    num1.input(x,y);
+    num2.input(x,y);
+    cout<<"\n num1=\n";
+    num1.show();
+    cout<<"\n num2=\n";
+    num2.show();
+    cout<<"\n addition:\n";
+    num1+num2;
+}
+
+
+Output:
+enter M and N:2
+3
+
+ enter values:
+1
+2
+3
+4
+5
+6
+
+ enter values:
+7
+8
+9
+10
+11
+12
+
+ num1=
+  1  2  3
+  4  5  6
+
+ num2=
+  7  8  9
+  10  11  12
+
+ addition:
+  8  10  12
+  14  16  18
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-sum-2-matrices-using.html
