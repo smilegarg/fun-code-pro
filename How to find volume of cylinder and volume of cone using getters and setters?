@@ -1,0 +1,69 @@
+// Write a program to find volume of cylinder and volume of cone using getters and setters…
+
+#include<iostream>
+using namespace std;
+class vol
+{
+    float r,h,v;
+    public:
+    void setValue(float r1,float h1)
+    {
+        r=r1;
+        h=h1;
+    }
+    void cyl()
+    {
+        v=3.14*r*r*h;
+    }
+    void cone()
+    {
+        v=3.14*r*r*h/3;
+    }
+    float getValue()
+
+    {
+        return v;
+    }
+};
+int main()
+{
+    int ch;
+    float r1,h1,v;
+    vol obj;
+    cout<<"\n press 1 for volume of cylinder \n press 2 for volume of cone\n ";
+    cin>>ch;
+    switch(ch)
+    {
+    case 1:
+        cout<<"\n enter radius and height of cylinder:";
+        cin>>r1>>h1;
+        obj.setValue(r1,h1);
+        obj.cyl();
+        v=obj.getValue();
+        cout<<"\n volume of cylinder:"<<v;
+        break;
+    case 2:
+        cout<<"\n enter radius and height of cone:";
+        cin>>r1>>h1;
+        obj.setValue(r1,h1);
+        obj.cone();
+        v=obj.getValue();
+        cout<<"\n volume of cone:"<<v;
+        break;
+    default:
+        cout<<"\n wrong choice";
+        break;
+    }
+}
+
+Output:
+press 1 for volume of cylinder
+ press 2 for volume of cone
+ 1
+
+ enter radius and height of cylinder:3
+5
+
+ volume of cylinder:141.3
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-find-volume-of-cylinder-and_1.html
