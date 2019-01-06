@@ -1,0 +1,25 @@
+//Write a program to convert lowercase to uppercase and vice versa…
+
+int main()
+{
+    char a[20];
+    int i;
+    printf("\n enter string:");
+    gets(a);
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i]>64 && a[i]<91)
+            a[i]+=32;
+        else if(a[i]>96 && a[i]<123)
+            a[i]-=32;
+    }
+    printf("\n new string:%s",a);
+}
+
+
+Output:
+enter string: smile GARG
+
+ new string: SMILE garg
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-convert-lowercase-to-uppercase.html
