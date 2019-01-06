@@ -1,0 +1,103 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i;
+    cout<<"\nenter N:";
+    cin>>n;
+    int *a=new int[n];
+    for(i=0;i<n;i++)
+    {
+        cout<<"\nenter integer value:";
+        cin>>a[i];
+    }
+    cout<<"\n output:\n";
+    for(i=0;i<n;i++)
+    {
+        cout<<a[i]<<endl;
+    }
+    cout<<"\n a="<<a;
+    delete []a;
+    cout<<"\n a="<<a;
+
+
+    cout<<"\n\n\n";
+    float *b=new float[n];                                 
+    for(i=0;i<n;i++)
+    {
+        cout<<"\nenter float value:";                            
+        cin>>b[i];
+    }
+    cout<<"\n output:\n";
+    for(i=0;i<n;i++)
+    {
+        cout<<b[i]<<endl;
+    }
+    cout<<"\n b="<<b;
+    delete []b;
+    cout<<"\n b="<<b;
+
+
+
+    cout<<"\n\n\n";
+    char *c=new char[n];
+    for(i=0;i<n;i++)
+    {
+        cout<<"\nenter char value:";
+        cin>>c[i];
+    }
+    cout<<"\n output:\n";
+    for(i=0;i<n;i++)
+    {
+        cout<<c[i]<<endl;
+    }
+    cout<<"\n c="<<(int)c;
+    delete []c;
+    cout<<"\n c="<<(int)c;
+}
+
+
+Output:
+enter N:3
+
+enter integer value:1
+enter integer value:2
+enter integer value:3
+
+ output:
+1
+2
+3
+
+ a=0x9f0eb0
+ a=0x9f0eb0
+
+
+
+enter float value:1.2
+enter float value:3.4
+enter float value:5.6
+
+ output:
+1.2
+3.4
+5.6
+
+ b=0x9f0eb0
+ b=0x9f0eb0
+
+
+
+enter char value:a
+enter char value:b
+enter char value:c
+
+ output:
+a
+b
+c
+
+ c=10425008
+ c=10425008
+
+Reference:https://funcodepro.blogspot.com/2019/01/write-program-to-use-memory-allocation.html
