@@ -1,0 +1,39 @@
+//Write a program to find volume of cylinder and cone using function with arguments..
+
+int main()
+{
+    float cyr,cyh,cor,coh;
+    void cyv(float cyr,float cyh);
+    void cov(float cor,float coh);
+    printf("\n enter radius and height of cylinder:");
+    scanf("%f%f",&cyr,&cyh);
+    printf("\n enter radius and height of cone:");
+    scanf("%f%f",&cor,&coh);
+    cyv(cyr,cyh);
+    cov(cor,coh);
+}
+void cyv(float cyr,float cyh)
+{
+    float v;
+    v=3.14*cyr*cyr*cyh;
+    printf("\n volume of cylinder:%f",v);
+}
+void cov(float cor,float coh)
+{
+    float v;
+    v=3.14*cor*cor*coh/3;
+    printf("\n volume of cone:%f",v);
+}
+
+
+Output:
+enter radius and height of cylinder:4
+4
+
+ enter radius and height of cone:5
+5
+
+ volume of cylinder:200.960007
+ volume of cone:130.833328
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-volume-of-cylinder-and-cone.html
