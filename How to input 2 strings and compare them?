@@ -1,0 +1,40 @@
+//Write a program to input 2 strings and compare them…
+
+int main()
+{
+    char a[20],b[20];
+    int i,j,k;
+    printf("\n password:");
+    gets(a);
+    printf("\n confirm password:");
+    gets(b);
+    for(i=0;a[i]!='\0';i++);
+    for(j=0;b[j]!='\0';j++);
+    if(i==j)
+    {
+        int l=0;
+        for(k=0;k<i;k++)
+        {
+            if(a[k]!=b[k])
+            {
+                l++;
+                break;
+            }
+        }
+        if(l==0)
+            printf("\n WELCOME!!!");
+        else
+            printf("\n Sorry ! Password is not matching");
+    }
+    else
+        printf("\n Sorry ! Password is not matching");
+}
+
+
+Output:
+password:123456789
+ confirm password:123456789
+
+ WELCOME!!!
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-input-2-strings-and-compare-them.html
