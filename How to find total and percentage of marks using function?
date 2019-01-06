@@ -1,0 +1,36 @@
+//Write a function : dototal() with 3 sunject marks as arguments and return total to main(). Then pass total from main() to function: doper(),to calculate percentage and return per to main and show on screen.
+
+int main()
+{
+    float s1,s2,s3,total,per;
+    printf("\n enter marks of 3 subjects(out of 100 each):");
+    scanf("%f%f%f",&s1,&s2,&s3);
+    float dototal(float s1,float s2,float s3);
+    total=dototal(s1,s2,s3);
+    float doper(float total);
+    per=doper(total);
+    printf("\n total=%f",total);
+    printf("\n percentage=%f",per);
+}
+float dototal(float s1,float s2,float s3)
+{
+    float total=s1+s2+s3;
+    return total;
+}
+float doper(float total)
+{
+    float per=total*100/300;
+    return per;25194
+}
+
+
+Output:
+enter marks of 3 subjects(out of 100 each):
+87
+98
+100
+
+ total=285.000000
+ percentage=95.000000
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-total-and-percentage-of.html
