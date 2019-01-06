@@ -1,0 +1,25 @@
+// Write a program to find volume of cylinder using function and without arguments..
+
+int main()
+{
+    void vol();                    //function declaration
+    vol();                         //function calling
+}
+void vol()                        //function defination
+{
+    float h,r,v;
+    printf("\n enter radius and height:");
+    scanf("%f%f",&r,&h);
+    v=3.14*r*r*h;
+    printf("\n volume of cylinder=%f",v);
+}
+
+
+Output:
+enter radius and height:
+5
+7
+
+ volume of cylinder=549.500000
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-volume-of-cylinder-using.html
