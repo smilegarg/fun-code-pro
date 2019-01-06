@@ -1,0 +1,40 @@
+//Write a program to find factorial of N…
+
+#include<iostream>
+using namespace std;
+class fact
+{
+    int n,i,f=1;
+public:
+    void input()
+    {
+        cout<<"enter N:";
+        cin>>n;
+    }
+    void pro()
+    {
+        for(i=1;i<=n;i++)
+        {
+            f=f*i;
+        }
+    }
+    void out()
+    {
+        cout<<"\n factorial:"<<f;
+    }
+};
+int main()
+{
+    fact obj;
+    obj.input();
+    obj.pro();
+    obj.out();
+}
+
+
+Output:
+enter N:5
+
+ factorial:120
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-find-factorial-of-n.html
