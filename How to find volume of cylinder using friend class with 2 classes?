@@ -1,0 +1,54 @@
+//Write a program to find volume of cylinder using friend class with 2 classes..
+
+#include<iostream>
+using namespace std;
+class data2;
+class data1
+{
+    float r;
+public:
+    void input()
+    {
+        cout<<"\n enter r:";
+        cin>>r;
+    }
+    friend class pro;
+};
+class data2
+{
+    float h;
+public:
+    void input()
+    {
+        cout<<"\n enter h:";
+        cin>>h;
+    }
+    friend class pro;
+};
+class pro
+{
+public:
+    void volume(data1 obj1,data2 obj2)
+    {
+        float v=3.14*obj1.r*obj1.r*obj2.h;
+        cout<<"\n volume="<<v;
+    }
+};
+int main()
+{
+    data1 obj1;
+    data2 obj2;
+    obj1.input();
+    obj2.input();
+    pro p;
+    p.volume(obj1,obj2);
+}
+
+
+Output:
+enter r:4
+ enter h:8
+
+ volume=401.92
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-find-volume-of-cylinder-using_43.html
