@@ -1,0 +1,37 @@
+//Write a program to find greatest element of array using functions without arguments…
+
+int main()
+{
+    void gr();
+    gr();
+}
+void gr()
+{
+    int n,i,a[10],max;
+    printf("\n enter N:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\n value at a[%d]:",i);
+        scanf("%d",&a[i]);
+    }
+    max=a[0];
+    for(i=0;i<n;i++)
+    {
+        if(max<a[i])
+            max=a[i];
+    }
+    printf("\n greatest element=%d",max);
+}
+
+Output:
+
+enter N:5
+ value at a[0]:4
+ value at a[1]:8
+ value at a[2]:5
+ value at a[3]:2
+ value at a[4]:5
+ greatest element=8
+
+Reference:https://funcodepro.blogspot.com/2018/12/how-to-find-greatest-element-of-array.html
