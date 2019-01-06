@@ -1,0 +1,65 @@
+//Write a program to find volume of cylinder and volume of cone…
+
+#include<iostream>
+using namespace std;
+class vol
+{
+    float r,h,v;
+    public:
+    void input()
+    {
+        cout<<"\n radius:";
+        cin>>r;
+        cout<<"\n height:";
+        cin>>h;
+    }
+    void cyl()
+    {
+        v=3.14*r*r*h;
+    }
+    void cone()
+    {
+        v=3.14*r*r*h/3;
+    }
+    void out()
+
+    {
+        cout<<"\n volume:"<<v;
+    }
+};
+int main()
+{
+    int ch;
+    vol obj;
+    cout<<"\n press 1 for volume of cylinder \n press 2 for volume of cone\n ";
+    cin>>ch;
+    switch(ch)
+    {
+    case 1:
+        obj.input();
+        obj.cyl();
+        obj.out();
+        break;
+    case 2:
+        obj.input();
+        obj.cone();
+        obj.out();
+        break;
+    default:
+        cout<<"\n wrong choice";
+        break;
+    }
+}
+
+
+Output:
+press 1 for volume of cylinder
+ press 2 for volume of cone
+ 2
+
+ radius:4
+ height:2
+
+ volume:33.4933
+
+Reference:https://funcodepro.blogspot.com/2019/01/how-to-find-volume-of-cylinder-and.html
